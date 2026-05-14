@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bio -->
+    <section aria-labelledby="bio-section">
+      <h2 id="bio-section">About Me</h2>
+      <img src="https://i.pinimg.com/736x/49/5e/70/495e708c8d0b3769c4371897808e888c.jpg" 
+          alt="An orange cat wearing glasses">
+      <p>Hello! I’m a Year 2 IT Engineering student learning programming, databases, and web development.</p>
+    </section>
+
+    <!-- Links -->
+    <section aria-labelledby="projects-section">
+      <h2 id="projects-section">My Links</h2>
+      <ul>
+        <li><a href="https://github.com/therealphearunpo">GitHub Profile</a></li>
+        <li><a href="https://web.facebook.com/therealphearun1">Facebook</a></li>
+        <li><a href="https://linkedin.com/in/therealphearunpo">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <!-- Schedule -->
+    <section aria-labelledby="schedule-section">
+      <h2 id="schedule-section">Weekly Schedule</h2>
+      <table>
+        <caption>ITE Afternoon Shift Timetable</caption>
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12:30 - 15:30</td>
+            <td>DSA</td><td>APL</td><td>English</td><td>OOAD</td><td>DB</td><td>WCT</td><td>FREE</td>
+          </tr>
+          <tr>
+            <td>15:30 - 17:30</td>
+            <td>DSA</td><td>APL</td><td>English</td><td>DB</td><td>DB</td><td>WCT</td><td>FREE</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact -->
+    <section aria-labelledby="contact-section">
+      <h2 id="contact-section">Contact Me</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required minlength="2">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic" required>
+            <option value="">Choose an option</option>
+            <option value="projects">Projects</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="general">General Inquiry</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required minlength="10"></textarea>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Phearunthereal</p>
+  </footer>
+</body>
+</html>
